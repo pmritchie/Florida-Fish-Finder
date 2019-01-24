@@ -13,7 +13,7 @@
     <title>Florida Fish Finder</title>
   </head>
   <body>
-      <header class="p-3 d-flex flex-row justify-content-start ">
+      <header class="p-3 d-flex flex-row justify-content-start">
         <div class="overlay"></div>
         <img class="logo" src="images/bait.svg">
         <video loop autoplay>
@@ -28,38 +28,40 @@
           </div>
         </div>
       </header>
-      <section class="background d-flex align-items-center justify-content-around " style="height: 500px;">
-        <nav class="d-flex align-items-start flex-column mb-3">
+      <section class="background d-flex align-items-center justify-content-around mt-5" style="height: 500px;">
+        <nav class="d-flex align-items-start flex-column mb-3" style="height: 300px">
           <a class="mb-auto p-2" href="/index.html">Home</a>
           <a class="p-2" href="/profile.html">Profile</a>
           <a class="p-2" href="/map.html">Map</a>
           <a class="p-2" href="/catchStream.html">CatchStream</a>
         </nav>
-        <article class="align-self-center mb-5 p-3" id="about">
-          <div  class="d-flex flex-row">
+        <article class="d-flex flex-column justify-content-center align-items-center p-3 rounded" id="about">
+          <div id="getItDone"></div>
+          <div id="top" class="d-flex flex-row m-5">
             <div id="info" class="d-flex flex-column pr-2">
               <h3>Find The Fish</h3>
-              <p class="">Stuff about the website goes in here. Florida Fish Finder</p>
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula vitae leo eget malesuada. Nunc quis rhoncus tellus, ut volutpat nunc. Curabitur id elit eget nisi molestie fermentum vitae sit amet leo. Aenean quis velit a elit consequat ornare a sit amet tellus. Aenean eget nisl in augue semper pellentesque vitae id quam. 
+             </p>
             </div>
-            <div id="infoPic">
+            <div>
               <img class="fishPic" src="images/trout.jpg" alt="trout fish">
             </div>
           </div>
 
-            <div id="blog" class="d-flex flex-row">
+            <div id="blog" class="d-flex flex-row m-5">
               <div>
                 <img src="images/grouper.jpg" alt="grouper fish">
               </div>
-              <div id="infContent">
+              <div id="infContent" class="pl-4">
                 <h3>Featured Blog</h3>
-                <p>Stuff about the BLOG goes in here. Florida Fish Finder</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vehicula vitae leo eget malesuada. Nunc quis rhoncus tellus, ut volutpat nunc. Curabitur id elit eget nisi molestie fermentum vitae sit amet leo. Aenean quis velit a elit consequat ornare a sit amet tellus. Aenean eget nisl in augue semper pellentesque vitae id quam. </p>
               </div>     
             </div>
         </article>
-        <article>
-          <h3>Orlando, FL</h3>
-          <h3>Forcast</h3>
-          <ul>
+        <article class="d-flex flex-column align-items-center">
+          <h3 class="pb-4">Orlando, FL</h3>
+          <h3>Forecast</h3>
+          <ul class="border-right border-left p-3 list-unstyled">
             <li>Sunny</li>
             <li>Cloudy</li>
             <li>Rainy</li>
