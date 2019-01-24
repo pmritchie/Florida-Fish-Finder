@@ -1,0 +1,26 @@
+{
+  "name": "floridafishfinder",
+  "version": "1.0.0",
+  "description": "This is a project site for a fishing application in where user's can log catches, post catches and plan trips.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node your-script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmritchie/Florida-Fish-Finder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmritchie/Florida-Fish-Finder/issues"
+  },
+  "homepage": "https://github.com/pmritchie/Florida-Fish-Finder#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "jquery": "^3.3.1",
+    "module": "^1.2.5",
+    "popper.js": "^1.14.6"
+  }
+}
