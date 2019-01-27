@@ -1,0 +1,39 @@
+
+header {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
+#getItDone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0.5;
+    height: 110%;
+    width: 100%;
+    z-index: 1;
+}
+#top {
+    position: relative;
+    z-index: 2;
+}
+#about {
+    position: relative;
+    z-index: 0;
+    height: 90%;
+}
+#blog {
+    position: relative;
+    z-index: 2;
+}
+img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+a {
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
+ul {
+    text-decoration: none;
+}
