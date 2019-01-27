@@ -1,19 +1,15 @@
 body {
     background-color: black;
+    margin: 0;
 }
 h1, h2 {
     font-family: 'Rock Salt', cursive;
     color: white;
 }
-h1 {
-    font-size: 48px;
-}
-h2 {
-    font-size: 64px
-}
 h3, h4 {
     font-family: 'Rock Salt', cursive;
     color: white;
+
 }
 header {
     position: relative;
@@ -80,7 +76,6 @@ header {
 #about {
     position: relative;
     z-index: 0;
-    width: 50%;
     height: 90%;
 }
 #blog {
@@ -88,15 +83,9 @@ header {
     z-index: 2;
 }
 .background{
-    background: url('/images/background.jpg') no-repeat 100%;
-    background-size: 100%;
-    height: 100%;
+    margin: 0;
 }
 a {
     font-family: 'Rock Salt', cursive;
     color: white;
-
-}
-ul {
-    text-decoration: none;
 }
