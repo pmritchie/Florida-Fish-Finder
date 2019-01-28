@@ -19,6 +19,7 @@
   "homepage": "https://github.com/pmritchie/Florida-Fish-Finder#readme",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "instafeed.js": "^1.4.1",
     "jquery": "^3.3.1",
     "module": "^1.2.5",
     "popper.js": "^1.14.6"

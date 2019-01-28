@@ -1,29 +1,18 @@
+
+h1, h2, h3, h4 {
+    color: white;
+    font-family: 'Rock Salt', cursive;
+}
+body {
+    background: url("/images/background.jpg") no-repeat center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
 header {
     font-family: 'Rock Salt', cursive;
     color: white;
-}
-#getItDone{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #ffffff;
-    opacity: 0.5;
-    height: 110%;
-    width: 100%;
-    z-index: 1;
-}
-#top {
-    position: relative;
-    z-index: 2;
-}
-#about {
-    position: relative;
-    z-index: 0;
-    height: 90%;
-}
-#blog {
-    position: relative;
-    z-index: 2;
 }
 img {
     height: 3.5rem;
@@ -36,3 +25,7 @@ a {
 ul {
     text-decoration: none;
 }
+#map {
+    height: 400px;  
+    width: 100%;  
+   }
