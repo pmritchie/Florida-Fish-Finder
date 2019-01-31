@@ -1,6 +1,9 @@
 body {
-    background-color: black;
-    margin: 0;
+    background: url("/images/background.jpg") no-repeat center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 h1, h2 {
     font-family: 'Rock Salt', cursive;
@@ -20,6 +23,7 @@ header {
     overflow: hidden;
     font-family: 'Rock Salt', cursive;
     z-index: 0;
+    border-bottom: 5rem solid black;
   }
   
   header video {
@@ -88,4 +92,8 @@ header {
 a {
     font-family: 'Rock Salt', cursive;
     color: white;
+}
+img {
+    height: 10rem;
+    width: 5rem;
 }

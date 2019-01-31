@@ -1,20 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <link rel="stylesheet" href="css/profile.css">
-    <style>
-      body {
-      background: url("images/background2.jpg") no-repeat center fixed;
-      background-size: 100%;
-      }
-    </style>
+
     <title>Florida Fish Finder</title>
   </head>
     <body class="container-fluid" style>
@@ -39,7 +32,7 @@
                 <div id="getItDone"></div>
               <div class="row" id="top">
                 <div class="col">
-                  <img src="images/profile.jpg" alt="profile picture">
+                  <img class="profile rounded-circle" src="images/profile.jpg" alt="profile picture">
                   <p>pmritchie24</p>
                 </div>
                 <div class="col">
@@ -47,39 +40,146 @@
                     <h2 class="row">Achievements</h2>
                     <ul class="list-unstyled row">
                       <li class="col">
-                        <img src="images/cup.svg" alt="trophy">
+                        <img class="icon" src="images/cup.svg" alt="trophy">
                       </li>
                       <li class="col">
-                          <img src="images/cup.svg" alt="trophy">
+                          <img class="icon" src="images/cup.svg" alt="trophy">
                       </li> 
                       <li class="col">
-                          <img src="images/cup.svg" alt="trophy">
+                          <img class="icon" src="images/cup.svg" alt="trophy">
                       </li>                    
                     </ul>
                   </div>
                 </div>
               </div>
-              <div class="row" id="">
-                <div class="col">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Menu 1</a></li>
-                        <li><a href="#">Menu 2</a></li>
-                        <li><a href="#">Menu 3</a></li>
-                      </ul>
-                </div>
-                <div class="col">
+              <div class="row" id="bottom">
+                <div class="col-8">
+                      <button class="tablink" onclick="openPage('Activity', this, 'blue')" id="defaultOpen">Activity</button>
+                      <button class="tablink" onclick="openPage('Catches', this, 'blue')" >Catches</button>
+                      <button class="tablink" onclick="openPage('Trips', this, 'blue')" >Trips</button>
+                      <button class="tablink" onclick="openPage('Tackle', this, 'blue')">Tackle</button>
+                      
+                      <div id="Activity" class="tabcontent">
+                        
+                        <div class="container">
+                          <div class="row pb-2">
+                            <div class="col-3">
+                              <img class="rounded-circle" src="images/profile.JPG">
+                            </div>       
+                            <div class="col">                     
+                              <h4>Badge Unlocked!</h4>
+                              <p>You have caught 5 fish this week!</p>
+                            </div> 
+                          </div>
+                          <div class="row pb-2">
+                              <div class="col-3">
+                                <img class="rounded-circle" src="images/profile.JPG">
+                              </div>       
+                              <div class="col">                     
+                                <h4>Badge Unlocked!</h4>
+                                <p>You have caught 5 fish this week!</p>
+                              </div> 
+                            </div>
+                        </div>
+                        <div class="row pl-3">
+                            <div class="col-3">
+                              <img class="rounded-circle" src="images/profile.JPG">
+                            </div>       
+                            <div class="col">                     
+                              <h4>Badge Unlocked!</h4>
+                              <p>You have caught 5 fish this week!</p>
+                            </div> 
+                          </div>
+                      </div>                       
+                      
+                      
+                      <div id="Catches" class="tabcontent">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <img src="images/profile.JPG">
+                              <h4>Mahi Mahi</h4>
+                              <p>10lbs 4oz, 30in</p> 
+                            </div>
+                            <div class="col">
+                              <img src="images/ting.JPG">
+                              <h4>Wahoo</h4>
+                              <p>7lbs 4oz, 24in</p> 
+                            </div>
+                            <div class="col">
+                              <img src="images/rachel.JPG">
+                              <h4>Wahoo</h4>
+                              <p>10lbs, 34in</p> 
+                            </div>
+                            <span class="col">
+                              <button class="rounded-circle">+</button>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div id="Trips" class="tabcontent">
+                          <div class="container">
+                              <div class="row">
+                                <div class="col">
 
+                                  <img src="images/lake-min.JPG">
+                                  <h4>Orlando Wetlands, FL</h4>
+                                  <p>Feburary 2, 2019</p> 
+
+                                </div>
+                                <div class="col">
+                                  <img src="images/beach-min.JPG">
+                                  <h4>Jaco Beach, CR</h4>
+                                  <p>March 3-7, 2018</p> 
+                                </div>
+                                <div class="col">
+                                  <img src="images/spring-min.jpg">
+                                  <h4>Wekiwa Springs, FL</h4>
+                                  <p>April 2, 2019</p> 
+                                </div>
+                                <span class="col">
+                                  <button class="rounded-circle">+</button>
+                                </span>
+                              </div>
+                            </div>
+                      </div>
+                      
+                      <div id="Tackle" class="tabcontent">
+                          <div class="container">
+                              <div class="row">
+                                <div class="col">
+                                  <img src="images/lure1-min.JPG">
+                                  <h4>Crankbait</h4>
+                                  <p>Rainbow Trout</p> 
+
+                                </div>
+                                <div class="col">
+                                  <img src="images/lure2-min.JPG">
+                                  <h4>Crankbait</h4>
+                                  <p>Tiger Stripe</p> 
+                                </div>
+                                <div class="col">
+                                  <img src="images/lure3-min.JPG">
+                                  <h4>Jig</h4>
+                                  <p>Minnow</p> 
+                                </div>
+                                <span class="col">
+                                  <button class="rounded-circle">+</button>
+                                </span>
+                              </div>
+                            </div>
+                      </div>
                 </div>
               </div>
-              
-            </div>
-          </section>
+            </article>    
+      </section>
         </div>
         </div>
       </section>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/profile.js"></script>
     </body>
 </html>

@@ -1,4 +1,12 @@
-
+body {
+    background: url("/images/background.jpg") no-repeat center fixed;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
 header {
     font-family: 'Rock Salt', cursive;
     color: white;
@@ -13,7 +21,7 @@ header {
     width: 100%;
     z-index: 1;
 }
-#top {
+.top {
     position: relative;
     z-index: 2;
 }
@@ -27,6 +35,10 @@ header {
     z-index: 2;
 }
 img {
+    height: 12rem;
+    width: 10rem;
+}
+.icon {
     height: 3.5rem;
     width: 3.5rem;
 }
