@@ -22,45 +22,25 @@
         <div class="container-fluid">
           <div class="row">
           <nav class="col-2 d-flex align-items-start flex-column mb-3" style="height: 300px">
-            <a class="mb-auto p-2" href="/profile.html">Profile</a>
+            <a class="mb-auto p-2" href="/profile.html"><u>Profile</u></a>
             <a class="p-2" href="/index.html">Home</a>
             <a class="p-2" href="/map.html">Map</a>
             <a class="p-2" href="/catchStream.html">CatchStream</a>
           </nav>
-          <section class="col-10">
-            <article class="container" id="about">
-                <div id="getItDone"></div>
+          <section class="col-8">
+            <article class="container about" id="about" >
               <div class="row" id="top">
                 <div class="col">
                   <img class="profile rounded-circle" src="images/profile.jpg" alt="profile picture">
                   <p>pmritchie24</p>
-                </div>
-                <div class="col">
-                  <div class="container">
-                    <h2 class="row">Achievements</h2>
-                    <ul class="list-unstyled row">
-                      <li class="col">
-                        <img class="icon" src="images/cup.svg" alt="trophy">
-                      </li>
-                      <li class="col">
-                          <img class="icon" src="images/cup.svg" alt="trophy">
-                      </li> 
-                      <li class="col">
-                          <img class="icon" src="images/cup.svg" alt="trophy">
-                      </li>                    
-                    </ul>
-                  </div>
-                </div>
+                </div>     
               </div>
-              <div class="row" id="bottom">
-                <div class="col-8">
+              <div class="row" id="bottom">     
                       <button class="tablink" onclick="openPage('Activity', this, 'blue')" id="defaultOpen">Activity</button>
                       <button class="tablink" onclick="openPage('Catches', this, 'blue')" >Catches</button>
                       <button class="tablink" onclick="openPage('Trips', this, 'blue')" >Trips</button>
-                      <button class="tablink" onclick="openPage('Tackle', this, 'blue')">Tackle</button>
-                      
-                      <div id="Activity" class="tabcontent">
-                        
+                      <button class="tablink" onclick="openPage('Tackle', this, 'blue')">Tackle</button>      
+                        <span id="Activity" class="tabcontent mt-5">
                         <div class="container">
                           <div class="row pb-2">
                             <div class="col-3">
@@ -90,12 +70,10 @@
                               <p>You have caught 5 fish this week!</p>
                             </div> 
                           </div>
-                      </div>                       
-                      
-                      
-                      <div id="Catches" class="tabcontent">
+                        </span>                    
+                      <div id="Catches" class="tabcontent mt-5">
                         <div class="container">
-                          <div class="row">
+                          <div class="row" id="catch-list">
                             <div class="col">
                               <img src="images/profile.JPG">
                               <h4>Mahi Mahi</h4>
@@ -111,22 +89,20 @@
                               <h4>Wahoo</h4>
                               <p>10lbs, 34in</p> 
                             </div>
-                            <span class="col">
-                              <button class="rounded-circle">+</button>
-                            </span>
                           </div>
+                          <span class="col">
+                            <button type="button" id="1" class="btn btn-primary addBtn" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Add Item</button>
+                          </span>
                         </div>
                       </div>
                       
-                      <div id="Trips" class="tabcontent">
+                      <div id="Trips" class="tabcontent mt-5">
                           <div class="container">
-                              <div class="row">
-                                <div class="col">
-
+                              <div class="row" id="trip-list">
+                                <div class="col" >
                                   <img src="images/lake-min.JPG">
                                   <h4>Orlando Wetlands, FL</h4>
                                   <p>Feburary 2, 2019</p> 
-
                                 </div>
                                 <div class="col">
                                   <img src="images/beach-min.JPG">
@@ -138,21 +114,20 @@
                                   <h4>Wekiwa Springs, FL</h4>
                                   <p>April 2, 2019</p> 
                                 </div>
-                                <span class="col">
-                                  <button class="rounded-circle">+</button>
-                                </span>
                               </div>
+                              <span class="col">
+                                <button type="button" id="2" class="btn btn-primary addBtn" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Add Item</button>
+                              </span>
                             </div>
                       </div>
                       
-                      <div id="Tackle" class="tabcontent">
+                      <div id="Tackle" class="tabcontent mt-5">
                           <div class="container">
-                              <div class="row">
-                                <div class="col">
+                              <div class="row" id="tackle-list">
+                                <div class="col" >
                                   <img src="images/lure1-min.JPG">
                                   <h4>Crankbait</h4>
                                   <p>Rainbow Trout</p> 
-
                                 </div>
                                 <div class="col">
                                   <img src="images/lure2-min.JPG">
@@ -164,15 +139,64 @@
                                   <h4>Jig</h4>
                                   <p>Minnow</p> 
                                 </div>
-                                <span class="col">
-                                  <button class="rounded-circle">+</button>
-                                </span>
                               </div>
+                              <span class="col">
+                                <button type="button" id="3" class="btn btn-primary addBtn" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Add item</button>
+                              </span>
                             </div>
                       </div>
-                </div>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Add Fish</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <form method="post" id="add-form" enctype="multipart/form-data" action="/upload/image">
+                                <div class="form-group">
+                                  <label for="photo-upload" class="col-form-label">Add photo:</label>
+                                  <input type="file" class="form-control" id="image-file">
+                                </div>
+                                <div class="form-group">
+                                  <label for="fish-name" class="col-form-label">Fish Name:</label>
+                                  <input type="text" class="form-control" id="fish-name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="fish-weight" class="col-form-label">Fish Size:</label>
+                                  <input type="text" class="form-control" id="fish-weight">
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="submit" id="send" class="btn btn-primary" data-dismiss="modal">Add Item</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
               </div>
             </article>    
+      </section>
+      <section class="col-2">
+        <div class="col">
+          <div class="container">
+            <h2 class="row">Achievements</h2>
+            <ul class="list-unstyled row">
+              <li class="col">
+                <img class="icon" src="images/cup.svg" alt="trophy">
+              </li>
+              <li class="col">
+                  <img class="icon" src="images/cup.svg" alt="trophy">
+              </li> 
+              <li class="col">
+                  <img class="icon" src="images/cup.svg" alt="trophy">
+              </li>                    
+            </ul>
+          </div>
+        </div>
       </section>
         </div>
         </div>
